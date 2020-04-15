@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>4College.net</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/logo.png" alt="" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <form class="d-flex search-box" action="#" method="post" id="ev_form">
+                                    <input type="text" name="" value="" placeholder="search" id="ev_form_input">
+                                    <button type="button" id="ev_form_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="#">Courses/Degrees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="#">Courses/Degrees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="#">Student Loans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="#">Refinance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="#">Books</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="image/logo-big.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row main-box">
+                    <div class="col-md-6">
+                        <div class="box">
+                            <img src="image/icon-1.png" alt="">
+                            <h2>Online College Courses/Degrees</h2>
+                            <a href="#" class="btn">START NOW  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <img src="image/icon-2.png" alt="">
+                            <h2>Student Loans</h2>
+                            <a href="#" class="btn">START NOW  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <img src="image/icon-3.png" alt="">
+                            <h2>Student Loan Refinance</h2>
+                            <p>(Lower your monthly payement)</p>
+                            <a href="#" class="btn">START NOW  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <img src="image/icon-4.png" alt="">
+                            <h2>College Textbooks</h2>
+                            <p>&nbsp;</p>
+                            <a href="#" class="btn">START NOW  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="#">Privacy Policy</a>  |
+                    <a href="#">Terms of Service</a>  |
+                    <a href="#">Accredited Courses</a>  |
+                    <a href="#">Accredited Degrees</a>  |
+                    <a href="#">Fast Acceptance Student Loans</a> <br/>
+                    <a href="#">Fast Acceptance Student Loan Refinancing</a>  |
+                    <a href="#">Contact Us</a>  |
+                    <a href="#">About Us</a>  |
+                    <a href="#">College Textbooks</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#ev_form_btn[type="button"]').click(function(){
+                    $("#ev_form").toggleClass("search-box-view");
+                });
+                $('#ev_form_input').on('change', function(){
+                    var datt = $(this).val();
+                    if(datt.length >= 1){
+                        $("#ev_form_btn").attr('type','submit');
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

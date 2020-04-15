@@ -1,0 +1,229 @@
+/*
+* main style
+*/
+
+body{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+* header
+*/
+.header{
+    padding:10px 0;
+    filter: drop-shadow(0 0 1.5px rgba(0,0,0,0.35));
+    background-color: #ffffff;
+}
+.collapse.navbar-collapse{
+    justify-content: flex-end;
+}
+.header .btn{
+    border-radius: 5px;
+    background-color: rgba(15,181,221,0.10196078431372549);
+    border: 2px solid #0fb5dd;
+    font-size: 15px;
+    color: #00aeef;
+    font-weight: 700;
+    margin: 0 5px;
+}
+.header .btn:hover{
+    background-color: #0fb5dd;
+}
+.navbar-brand{
+    max-width: 250px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #00aeef;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+.search-box input{
+    display: none;
+}
+.search-box{
+    padding: 7px 0;
+}
+.search-box input{
+    width: 0px;
+    border:0px;
+    outline: none;
+    box-shadow: none;
+    padding-left:5px;
+    display: block;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+}
+.search-box-view input{
+    width: 150px;
+}
+.search-box-view{
+    border: 2px solid #0fb5dd;
+    padding: 6px 0;
+    border-radius: 5px;
+}
+.search-box button{
+    background-color: transparent;
+    border:none;
+    box-shadow: none;
+    outline: none;
+    color: #00aeef;
+}
+.navbar-light .navbar-toggler{
+    outline: none;
+    border: 2px solid #0fb5dd;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(15,181,221, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/*
+* footer
+*/
+.footer{
+    background-color: #2a2a30;
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+.footer p{
+    margin: 0;
+}
+.footer a{
+    color: #fff;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+
+
+
+/*
+* page
+*/
+.main{
+    background-color: #f7f7f7;
+    padding: 50px 0px;
+}
+.main-box{
+    margin-top: 40px;
+}
+.main-box .box{
+    text-align: center;
+    padding: 50px 0;
+    margin: 10px 0px;
+}
+.main-box .box h2{
+    font-size: 32px;
+    color: #2a2a30;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 0;
+}
+.main-box .box .btn{
+    border-radius: 5px;
+    background-color: #f20000;
+    outline: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.main-box .box .btn:hover{
+    background: #2a2a30;
+    transition-duration: 0.7s;
+}
+.main-box .box  img{
+    height: 80px;
+}
+.main-box .col-md-6:nth-child(1) .box,
+.main-box .col-md-6:nth-child(2) .box{
+    border-bottom: 2px solid #2a2a30;
+}
+.main-box .col-md-6:nth-child(1):after{
+    content: '';
+    height: 91.5%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    background-color: #2a2a30;
+}
+.main-box .col-md-6:nth-child(3):after{
+    content: '';
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 2px;
+    background-color: #2a2a30;
+}
+
+
+
+
+/*
+* responsive
+*/
+
+@media (max-width:767px) {
+    .navbar-brand {
+        max-width: 150px;
+    }
+    .main-box .box h2 {
+        font-size: 17px;
+    }
+    .main-box .col-md-6:after {
+        display: none;
+    }
+    .main-box .col-md-6:nth-child(3) .box{
+        border-bottom: 2px solid #2a2a30;
+    }
+    .main-box .col-md-6:nth-child(4) .box p{
+        display: none;
+    }
+    .main-box .box .btn{
+        font-size: 14px;
+    }
+    .main-box {
+        margin-top: 0;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .main-box .box h2 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .footer a{
+        font-size: 12px;
+    }
+}
+@media (max-width:991px){
+    .navbar-nav .nav-item{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .search-box{
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .header .btn {
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    .search-box-view input {
+        width: 70px;
+    }
+    .main-box .box h2 {
+        font-size: 26px;
+    }
+}
